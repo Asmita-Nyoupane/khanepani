@@ -11,7 +11,7 @@ const Events = () => {
         <div className='space-y-12 w-11/12 mx-auto'>
             {/* Header Section */}
             <div className='flex flex-col gap-4 items-center justify-center'>
-                <h2 className="text-center  font-medium text-secondaryColor uppercase tracking-wide">
+                <h2 className="text-center font-semibold text-secondaryColor uppercase tracking-wide">
                     Discover Our Featured Events
                 </h2>
                 <h1 className='title capitalize  text-gray-800 text-center'>
@@ -23,10 +23,10 @@ const Events = () => {
             </div>
 
             {/* Events Grid */}
-            <div className='grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+            <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-6'>
                 {eventsData.map((event) => (
                     <Link href="/" key={event.id}>
-                        <Card className='group cursor-pointer  h-[350px] space-y-4 overflow-hidden shadow-lg rounded-lg transition-transform duration-300 md:hover:scale-105 md:hover:shadow-2xl'>
+                        <Card className='group cursor-pointer  h-[370px] space-y-4 overflow-hidden shadow-lg rounded-lg transition-transform duration-300 md:hover:scale-105 md:hover:shadow-2xl'>
                             {/* Image Section */}
                             <div className='relative'>
                                 <Image
@@ -38,7 +38,7 @@ const Events = () => {
                                     priority={true}
                                     className='object-cover transition-transform duration-500 ease-in-out md:group-hover:scale-110 w-full h-[250px] rounded-t-lg'
                                 />
-                                <span className='bg-primaryColor py-1 px-2 rounded-br-lg text-xs text-white font-medium absolute top-0 left-0'>
+                                <span className='bg-primaryColor text-white py-1 px-2 rounded-br-lg text-xs text-whitefont-semibold absolute top-0 left-0'>
                                     {event.date}
                                 </span>
                             </div>

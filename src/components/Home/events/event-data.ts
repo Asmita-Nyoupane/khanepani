@@ -21,7 +21,7 @@ export const eventsData = [
     },
     {
         id: 3,
-        image: "/assets/events/rain-water.jpeg",
+        image: "/assets/news/news-1.jpg",
         name: "Rainwater Harvesting Workshop",
         date: "2024-09-25",
         description:

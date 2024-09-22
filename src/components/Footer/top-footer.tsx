@@ -37,7 +37,7 @@ const TopFooter = () => {
                         <Link
                             key={i}
                             href={link.link}
-                            className='text-sm font-medium transition-all duration-200 ease-in-out hover:text-primaryColor'
+                            className='text-sm font-medium transition-all duration-200 ease-in-out '
                         >
                             {link.name}
                         </Link>

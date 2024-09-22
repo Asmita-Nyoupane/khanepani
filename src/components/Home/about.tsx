@@ -20,7 +20,7 @@ const AboutSection = () => {
             {/* Text Section */}
             <section className='flex-1 transition-opacity duration-1000 ease-in-out opacity-0 animate-fade-in-right'>
                 <div className='space-y-3 mb-5'>
-                    <p className='text-secondaryColor uppercase tracking-wide font-medium'>About Us</p>
+                    <p className='text-secondaryColor uppercase tracking-widefont-semibold'>About Us</p>
                     <h2 className='title text-gray-800'>Welcome to <span className='text-primaryColor'>Shankarnagar Water Supply</span></h2>
                 </div>
                 <p className='text-gray-600 leading-relaxed'>
@@ -35,7 +35,7 @@ const AboutSection = () => {
                     a thing of the past. We invite all members of the community to join us in these efforts to build a brighter future
                     for generations to come.
                 </p>
-                <p className='mt-4 text-gray-700 font-medium'>
+                <p className='mt-4 text-gray-700font-semibold'>
                     Together, let&apos;s ensure that clean water flows in every home.
                 </p>
             </section>

@@ -7,7 +7,7 @@ const PresidentMessage = () => {
 
             <section className='md:w-[50%]'>
                 <div className='space-y-3 mb-5'>
-                    <p className='text-secondaryColor uppercase tracking-wide font-medium'>President&apos;s Message</p>
+                    <p className='text-secondaryColor uppercase tracking-wide font-semibold'>President&apos;s Message</p>
                     <h2 className='title text-gray-800'>A Word from Our <span className='text-primaryColor'>President</span></h2>
                 </div>
                 <p className='text-gray-600 leading-relaxed'>
@@ -18,7 +18,7 @@ const PresidentMessage = () => {
                     water scarcity is a challenge of the past. I encourage every member of our community to engage
                     with our efforts as we continue to expand and improve the services that support our daily lives.
                 </p>
-                <p className='mt-4 text-gray-700 font-medium flex-end'>
+                <p className='mt-4 text-gray-700 font-semibold flex-end'>
                     — Nirmal Thapa
                 </p>
             </section>

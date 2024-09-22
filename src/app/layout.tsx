@@ -6,6 +6,7 @@ import BottomHeader from "@/components/Header/bottom-header";
 import SideHeader from "@/components/Header/side-header";
 import Footer from "@/components/Footer/footer";
 import TopHeader from "@/components/Header/top-header";
+import { NewsModal } from "@/components/Home/notice-modal/Modal";
 
 
 
@@ -32,8 +33,10 @@ export default function RootLayout({
         className={`${poppins.className} antialiased min-h-screen`}
       >
         <TopHeader />
+
         <BottomHeader />
         <SideHeader />
+        <NewsModal />
         {children}
         <Footer />
       </body>
