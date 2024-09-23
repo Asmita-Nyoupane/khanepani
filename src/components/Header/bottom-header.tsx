@@ -3,11 +3,8 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { navLinks } from "./navlinks";
-
 import Image from "next/image";
-import { useEffect } from "react";
 import GoogleTranslate from "@/GoogleTranslate";
 
 export type LinkItem = {
@@ -18,27 +15,6 @@ export type LinkItem = {
 const BottomHeader = () => {
 
     const path = usePathname();
-    // Function to trigger language change using Google Translate
-    const changeLanguage = (lang: string) => {
-        const selectField = document.querySelector("select.goog-te-combo") as HTMLSelectElement;
-        if (selectField) {
-            selectField.value = lang;
-            selectField.dispatchEvent(new Event("change"));
-        }
-    };
-
-    useEffect(() => {
-        // Ensure that the Google Translate script is initialized
-        if (typeof window !== "undefined") {
-            setTimeout(() => {
-                const selectField = document.querySelector("select.goog-te-combo") as HTMLSelectElement;
-                if (selectField) {
-                    selectField.style.display = "none"; // Hide the default dropdown
-                }
-            }, 500);
-        }
-    }, []);
-
 
     return (
         <header className="sticky top-0 left-0 right-0 z-50 bg-white shadow-md transition-colors duration-300 text-black">

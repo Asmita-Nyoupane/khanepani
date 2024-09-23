@@ -13,10 +13,30 @@ import { Skeleton } from "./components/ui/skeleton";
 
 
 // Declare google and googleTranslateElementInit on the window object
+
+interface GoogleTranslate {
+    translate: {
+        TranslateElement: new (options: {
+            pageLanguage: string;
+            includedLanguages: string;
+            layout: {
+                InlineLayout: {
+                    /* eslint-disable @typescript-eslint/no-explicit-any */
+                    SIMPLE: any
+                };
+            }
+            autoDisplay: boolean;
+        }, elementId: string) => void;
+
+    };
+}
+
+
 declare global {
     interface Window {
         googleTranslateElementInit: () => void;
-        google: any;
+        /* eslint-disable @typescript-eslint/no-explicit-any */
+        google: GoogleTranslate | any; // Use the defined interface here
     }
 }
 
