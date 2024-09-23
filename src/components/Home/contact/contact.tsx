@@ -7,7 +7,7 @@ const Contact = () => {
         <section className='space-y-8 w-11/12 mx-auto '>
             <div className='flex flex-col gap-3 items-center justify-center'>
 
-                <h2 className=" text-center   uppercase font-semibold text-secondaryColor">Connect</h2>
+                <h2 className=" text-center   uppercase font-semibold text-secondaryColor">Contact</h2>
                 <h1 className='title capitalize text-center max-w-4xl'>
                     Get In   <span className='text-primaryColor leading-9'>Touch</span> with Us
                 </h1>

@@ -9,7 +9,7 @@ const OurService = () => {
         <section className='space-y-8 w-11/12 mx-auto ' >
             <div className='flex flex-col gap-3 items-center justify-center'>
 
-                <h2 className=" text-center   uppercase font-medium text-secondaryColor">Our Service</h2>
+                <h2 className=" text-center   uppercase font-semibold text-secondaryColor">Our Service</h2>
                 <h1 className='title capitalize text-center max-w-4xl'>
                     Delivering <span className='text-primaryColor leading-9'>Essential Water Services</span> for a Healthy Community
                 </h1>

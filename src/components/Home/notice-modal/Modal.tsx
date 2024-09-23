@@ -30,19 +30,19 @@ export function NewsModal() {
 
     return (
         <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent className="sm:max-w-[425px] space-y-4 h-[80vh] overflow-y-scroll scrollbar-hide">
+            <DialogContent className="sm:max-w-[425px] space-y-2 h-[80vh] overflow-y-scroll scrollbar-hide">
                 <DialogHeader className="space-y-4">
                     <DialogTitle className="text-primaryColor w-[90%] mx-auto ">{latestNews.title}</DialogTitle>
 
                 </DialogHeader>
-                <div className="relative   w-full p-2">
+                <div className="relative    w-full p-2">
                     <Image
                         src={latestNews.image}
                         alt={latestNews.title}
                         height={300}
                         width={300}
-
-                        className="rounded-lg object-cover "
+                        priority={true}
+                        className="rounded-lg object-cover h-full w-full "
                     />
                 </div>
                 <DialogDescription>

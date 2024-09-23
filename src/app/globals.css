@@ -11,7 +11,20 @@
     scrollbar-width: none;     /* Firefox */
 }
 
+/* Hide Google Translate banner */
+.goog-te-banner-frame {
+    display: none !important; /* Hides the banner */
+}
 
+/* Adjust body position to avoid content shifting */
+body {
+    top: 0px !important; /* Reset any top margin caused by the hidden banner */
+}
+
+/* Optionally hide the skiptranslate class if needed */
+.skiptranslate {
+    display: none !important; /* Caution: This will hide all content within this class */
+}
 
 
 .title{
